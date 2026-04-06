@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pengueng - Learn Phrasal Verbs</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#ffdbd1",
+                    "surface-container-high": "#ffe2da",
+                    "primary": "#406900",
+                    "error-container": "#ffdad6",
+                    "background": "#fff8f6",
+                    "on-primary-fixed": "#102000",
+                    "surface-variant": "#ffdbd1",
+                    "surface-dim": "#fad1c6",
+                    "inverse-on-surface": "#ffede8",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#ffb4a5",
+                    "inverse-primary": "#91db2e",
+                    "secondary": "#b5260a",
+                    "primary-container": "#85cd1e",
+                    "error": "#ba1a1a",
+                    "surface-container": "#ffe9e4",
+                    "on-error": "#ffffff",
+                    "on-surface": "#2b1610",
+                    "on-tertiary-container": "#004f72",
+                    "on-surface-variant": "#424936",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#c8e6ff",
+                    "surface": "#fff8f6",
+                    "on-primary-container": "#315300",
+                    "on-primary-fixed-variant": "#2f4f00",
+                    "outline-variant": "#c1cab1",
+                    "inverse-surface": "#432a23",
+                    "tertiary": "#006590",
+                    "on-tertiary-fixed-variant": "#004c6e",
+                    "surface-tint": "#406900",
+                    "on-tertiary-fixed": "#001e2e",
+                    "on-background": "#2b1610",
+                    "primary-fixed": "#acf84b",
+                    "tertiary-container": "#63c3ff",
+                    "secondary-fixed": "#ffdad3",
+                    "surface-bright": "#fff8f6",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#fff1ed",
+                    "primary-fixed-dim": "#91db2e",
+                    "on-secondary-fixed-variant": "#8d1500",
+                    "on-secondary-container": "#580900",
+                    "secondary-container": "#fc5939",
+                    "on-secondary-fixed": "#3e0500",
+                    "outline": "#727a64",
+                    "tertiary-fixed-dim": "#88ceff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col items-center">
+<!-- TopAppBar -->
+<header class="bg-[#fff8f6] dark:bg-[#2b1610] flex justify-between items-center w-full px-6 py-4 max-w-xl mx-auto sticky top-0 z-40">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#406900] dark:text-[#85cd1e]">menu</span>
+<h1 class="text-2xl font-black text-[#406900] dark:text-[#85cd1e] tracking-tight">Pengueng</h1>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-full">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span class="font-bold text-on-surface">12</span>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="w-full max-w-xl px-6 pt-4 pb-32 flex flex-col gap-6">
+<!-- Progress Bar -->
+<div class="w-full flex items-center gap-4 mb-2">
+<div class="flex-1 h-4 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full w-[65%] bg-gradient-to-r from-primary to-primary-container rounded-full relative">
+<div class="absolute top-0 left-0 w-full h-1/2 bg-white/20"></div>
+</div>
+</div>
+<span class="text-label font-bold text-primary">6/10</span>
+</div>
+<!-- Learning Card -->
+<div class="bg-surface-container-lowest rounded-xl p-8 shadow-[0_-4px_20px_rgba(43,22,16,0.05)] border border-outline-variant/15 relative overflow-hidden">
+<!-- Decorative Blobs -->
+<div class="absolute -top-12 -right-12 w-32 h-32 bg-primary-fixed/20 rounded-full blur-3xl"></div>
+<div class="absolute top-1/2 -left-12 w-24 h-24 bg-tertiary-container/10 rounded-full blur-2xl"></div>
+<div class="relative z-10 flex flex-col gap-8">
+<!-- Header: Verb & Audio -->
+<div class="flex justify-between items-start">
+<div class="flex flex-col">
+<span class="text-xs font-extrabold uppercase tracking-widest text-outline mb-1">PHRASAL VERB</span>
+<h2 class="text-4xl font-black text-on-surface tracking-tight">Go through</h2>
+</div>
+<button class="w-14 h-14 rounded-full bg-primary-container flex items-center justify-center text-primary hover:scale-95 transition-transform active:scale-90 shadow-sm shadow-primary/20">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">volume_up</span>
+</button>
+</div>
+<!-- Meaning Section -->
+<div class="bg-surface-container-low rounded-lg p-6">
+<div class="flex flex-col gap-1">
+<span class="text-xs font-bold text-secondary uppercase tracking-wider">Meaning / Anlamı</span>
+<p class="text-2xl font-bold text-on-surface">İncelemek / Gözden geçirmek</p>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant/20 flex items-center gap-2">
+<span class="text-sm font-semibold text-tertiary">Synonym:</span>
+<span class="px-3 py-1 rounded-md bg-tertiary-container/30 text-tertiary font-bold text-sm">Examine</span>
+</div>
+</div>
+<!-- Example Sentence Section -->
+<div class="flex flex-col gap-4">
+<div class="flex items-start gap-4">
+<button class="mt-1 w-10 h-10 shrink-0 rounded-full border border-outline-variant/30 flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-xl">volume_up</span>
+</button>
+<div class="flex flex-col gap-3">
+<p class="text-xl font-medium leading-relaxed text-on-surface">
+                                "I need to <span class="text-secondary font-extrabold underline decoration-secondary-container decoration-4 underline-offset-4">go through</span> these reports before the meeting."
+                            </p>
+<div class="bg-surface-container-high/40 p-4 rounded-md border-l-4 border-secondary">
+<p class="text-base text-on-surface-variant italic">
+                                    "Toplantıdan önce bu raporları incelemem gerekiyor."
+                                </p>
+<div class="mt-2 flex justify-end">
+<button class="text-secondary font-bold text-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-sm">volume_up</span>
+                                        Listen Turkish
+                                    </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Navigation Actions -->
+<div class="grid grid-cols-2 gap-4 mt-4">
+<button class="flex items-center justify-center gap-2 py-5 px-6 rounded-xl border-2 border-outline-variant/30 font-bold text-on-surface-variant hover:bg-surface-container-low transition-all active:scale-95">
+<span class="material-symbols-outlined">arrow_back_ios</span>
+                Previous
+            </button>
+<button class="flex items-center justify-center gap-2 py-5 px-6 rounded-xl bg-gradient-to-br from-primary to-primary-container text-white font-bold text-lg shadow-lg shadow-primary/20 hover:opacity-90 transition-all active:scale-95">
+                Next
+                <span class="material-symbols-outlined">arrow_forward_ios</span>
+</button>
+</div>
+<!-- Visual Context Card -->
+<div class="mt-4 rounded-xl overflow-hidden aspect-[16/9] relative group">
+<img alt="Reviewing documents" class="w-full h-full object-cover" data-alt="Close-up of a person focusing on reading multiple documents on a desk with a warm office light and professional aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2xsV0zMMkHYn6rWeUms2zCSZiTS1bWZWkezGNMA3ivKoK32QgtGZCuk9Bb22a1RGwvZyK4aL68vKl25vRc_VoZFPdpyN8is0Ud9VfFrdaCwQRTmfi6ReFP7pKgeLzB2AG5VKhwAkds3d-9Nn4E4hFU8875Y7Xr5SewNJ5arXmHeLpjrN0bf0EpJqRisK_rnRfs1AZS4KDTFljUiCyFegmmfFUl_vVKAHUG8tvbmHyA3sXg1MXi7srVQEGQuxLe2gtT2GDUQs7TE6T"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
+<p class="text-white text-sm font-medium opacity-90">Visualize the action: Scanning and checking details carefully.</p>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#ffffff] dark:bg-[#2b1610] shadow-[0_-4px_20px_rgba(43,22,16,0.05)] rounded-t-[3rem] border-t border-[#c1cab1]/15">
+<div class="flex flex-col items-center justify-center text-[#2b1610]/70 dark:text-[#fff8f6]/70 px-5 py-2 hover:opacity-80 transition-all duration-200 cursor-pointer">
+<span class="material-symbols-outlined">home</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[11px]">Home</span>
+</div>
+<!-- Active Tab: Learn -->
+<div class="flex flex-col items-center justify-center bg-[#85cd1e] text-[#406900] rounded-full px-5 py-2 transition-all duration-300 scale-100 active:scale-90 cursor-pointer shadow-sm shadow-[#85cd1e]/40">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">menu_book</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold text-[11px]">Learn</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#2b1610]/70 dark:text-[#fff8f6]/70 px-5 py-2 hover:opacity-80 transition-all duration-200 cursor-pointer">
+<span class="material-symbols-outlined">fitness_center</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[11px]">Practice</span>
+</div>
+<div class="flex flex-col items-center justify-center text-[#2b1610]/70 dark:text-[#fff8f6]/70 px-5 py-2 hover:opacity-80 transition-all duration-200 cursor-pointer">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[11px]">Profile</span>
+</div>
+</nav>
+</body></html>

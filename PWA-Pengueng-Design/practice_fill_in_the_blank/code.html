@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Practice - Pengueng</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#ffdbd1",
+                        "surface-container-high": "#ffe2da",
+                        "primary": "#406900",
+                        "error-container": "#ffdad6",
+                        "background": "#fff8f6",
+                        "on-primary-fixed": "#102000",
+                        "surface-variant": "#ffdbd1",
+                        "surface-dim": "#fad1c6",
+                        "inverse-on-surface": "#ffede8",
+                        "on-tertiary": "#ffffff",
+                        "secondary-fixed-dim": "#ffb4a5",
+                        "inverse-primary": "#91db2e",
+                        "secondary": "#b5260a",
+                        "primary-container": "#85cd1e",
+                        "error": "#ba1a1a",
+                        "surface-container": "#ffe9e4",
+                        "on-error": "#ffffff",
+                        "on-surface": "#2b1610",
+                        "on-tertiary-container": "#004f72",
+                        "on-surface-variant": "#424936",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#c8e6ff",
+                        "surface": "#fff8f6",
+                        "on-primary-container": "#315300",
+                        "on-primary-fixed-variant": "#2f4f00",
+                        "outline-variant": "#c1cab1",
+                        "inverse-surface": "#432a23",
+                        "tertiary": "#006590",
+                        "on-tertiary-fixed-variant": "#004c6e",
+                        "surface-tint": "#406900",
+                        "on-tertiary-fixed": "#001e2e",
+                        "on-background": "#2b1610",
+                        "primary-fixed": "#acf84b",
+                        "tertiary-container": "#63c3ff",
+                        "secondary-fixed": "#ffdad3",
+                        "surface-bright": "#fff8f6",
+                        "on-secondary": "#ffffff",
+                        "surface-container-low": "#fff1ed",
+                        "primary-fixed-dim": "#91db2e",
+                        "on-secondary-fixed-variant": "#8d1500",
+                        "on-secondary-container": "#580900",
+                        "secondary-fixed": "#ffdad3",
+                        "secondary-container": "#fc5939",
+                        "on-secondary-fixed": "#3e0500",
+                        "outline": "#727a64",
+                        "tertiary-fixed-dim": "#88ceff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 left-0 right-0 z-50 bg-[#fff8f6] dark:bg-[#2b1610]">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-xl mx-auto">
+<button class="material-symbols-outlined text-[#406900] dark:text-[#85cd1e] active:scale-95 duration-150" data-icon="menu">menu</button>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold text-xl text-[#406900] dark:text-[#85cd1e] tracking-tight">Pengueng</h1>
+<button class="material-symbols-outlined text-[#406900] dark:text-[#85cd1e] active:scale-95 duration-150" data-icon="local_fire_department">local_fire_department</button>
+</div>
+</header>
+<!-- Main Content Area -->
+<main class="flex-grow pt-24 pb-32 px-6 max-w-xl mx-auto w-full">
+<!-- Lesson Progress Section -->
+<div class="mb-10 space-y-4">
+<div class="flex items-center justify-between px-2">
+<span class="text-label font-bold text-primary">Mastering Daily Phrasals</span>
+<span class="text-label font-bold text-on-surface/60">80%</span>
+</div>
+<div class="h-4 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full w-[80%] bg-gradient-to-r from-primary to-primary-container rounded-full relative shadow-inner">
+<div class="absolute inset-0 bg-white/20 w-full h-1/2 rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Feedback Illustration Section (Editorial Bento Style) -->
+<div class="grid grid-cols-1 gap-6 mb-8">
+<div class="bg-surface-container-low rounded-xl p-8 flex flex-col items-center justify-center relative overflow-hidden group">
+<!-- Playful background blob -->
+<div class="absolute -top-10 -right-10 w-40 h-40 bg-primary-container/20 rounded-full blur-3xl"></div>
+<div class="relative z-10 text-center">
+<img alt="Happy Penguin" class="w-48 h-48 object-contain mb-4 mx-auto" data-alt="A cute stylized 3D penguin character wearing a small scarf, jumping with joy and holding a gold medal, soft clay-like texture, bright studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABCydlCE7U3B0jsag2_mIO4cwMrcUiex0GSThm5rLT_Yldo4AktRZQkf6tAG60dKMlDodx0aA7ETsbBrDF-VJp835XaZeXgLY27V5jEcOzdnEjKYgTraCkaFPjCNkRUPKSbtMOuYMLdweGGabur-rP3JOrXmFff8k9PdXAJDyHq7Fl7OD9v1sWtktM_iyM7K960si4s811_MYmS2KvtL9F49E8MaI7j6WjNKps-j2N0Ydrx-8HQxmN0pYnYN3M71nqne9A4aCUMToE"/>
+<h2 class="text-headline text-2xl font-extrabold text-primary mb-1">Harika!</h2>
+<p class="text-body text-on-surface-variant font-medium">You nailed it! Keep going.</p>
+</div>
+</div>
+</div>
+<!-- Exercise Canvas -->
+<div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/15 shadow-[0_8px_30px_rgb(43,22,16,0.04)] mb-8">
+<div class="space-y-6">
+<div class="inline-block px-4 py-1.5 bg-tertiary-container/30 text-on-tertiary-container rounded-md text-[0.75rem] font-bold uppercase tracking-wider mb-2">
+                    Fill in the blanks
+                </div>
+<div class="text-headline text-xl md:text-2xl font-bold leading-relaxed">
+                    "The plane will <span class="inline-block px-6 py-1 bg-primary-container text-on-primary-container rounded-md border-b-4 border-primary/20">take off</span> in 10 minutes."
+                </div>
+<p class="text-body text-on-surface/60 italic font-medium">
+                    "Uçak 10 dakika içinde havalanacak."
+                </p>
+</div>
+</div>
+<!-- Options Cluster -->
+<div class="grid grid-cols-1 gap-3">
+<!-- Selected Success State -->
+<button class="w-full flex items-center justify-between bg-primary-container p-6 rounded-lg text-left transition-all active:scale-[0.98]">
+<span class="text-title font-bold text-on-primary-container">take off</span>
+<span class="material-symbols-outlined text-on-primary-container" data-icon="check_circle" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</button>
+<!-- Inactive State -->
+<button class="w-full flex items-center justify-between bg-surface-container-low p-6 rounded-lg text-left hover:bg-surface-container-high transition-all active:scale-[0.98]">
+<span class="text-title font-bold text-on-surface/70">look for</span>
+<span class="w-6 h-6 rounded-full border-2 border-outline-variant/30"></span>
+</button>
+<!-- Inactive State -->
+<button class="w-full flex items-center justify-between bg-surface-container-low p-6 rounded-lg text-left hover:bg-surface-container-high transition-all active:scale-[0.98]">
+<span class="text-title font-bold text-on-surface/70">run out</span>
+<span class="w-6 h-6 rounded-full border-2 border-outline-variant/30"></span>
+</button>
+</div>
+<!-- Primary Action -->
+<div class="mt-12">
+<button class="w-full py-5 px-8 bg-gradient-to-br from-primary to-primary-container text-on-primary rounded-xl font-bold text-lg shadow-[0_10px_25px_rgba(64,105,0,0.3)] active:scale-95 transition-all">
+                Continue
+            </button>
+</div>
+</main>
+<!-- Bottom Navigation Shell -->
+<nav class="fixed bottom-0 left-0 w-full z-50 bg-[#ffffff] dark:bg-[#2b1610] rounded-t-[3rem] border-t border-[#c1cab1]/15 shadow-[0_-4px_20px_rgba(43,22,16,0.05)] flex justify-around items-center px-4 pb-6 pt-3">
+<!-- Home -->
+<a class="flex flex-col items-center justify-center text-[#2b1610]/70 dark:text-[#fff8f6]/70 px-5 py-2 hover:opacity-80" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[11px]">Home</span>
+</a>
+<!-- Learn -->
+<a class="flex flex-col items-center justify-center text-[#2b1610]/70 dark:text-[#fff8f6]/70 px-5 py-2 hover:opacity-80" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[11px]">Learn</span>
+</a>
+<!-- Practice (Active) -->
+<a class="flex flex-col items-center justify-center bg-[#85cd1e] text-[#406900] rounded-full px-5 py-2 transition-all duration-300 active:scale-90" href="#">
+<span class="material-symbols-outlined" data-icon="fitness_center" style="font-variation-settings: 'FILL' 1;">fitness_center</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[11px]">Practice</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-[#2b1610]/70 dark:text-[#fff8f6]/70 px-5 py-2 hover:opacity-80" href="#">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[11px]">Profile</span>
+</a>
+</nav>
+</body></html>

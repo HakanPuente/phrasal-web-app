@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="tr"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#ffdbd1",
+                    "surface-container-high": "#ffe2da",
+                    "primary": "#406900",
+                    "error-container": "#ffdad6",
+                    "background": "#fff8f6",
+                    "on-primary-fixed": "#102000",
+                    "surface-variant": "#ffdbd1",
+                    "surface-dim": "#fad1c6",
+                    "inverse-on-surface": "#ffede8",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#ffb4a5",
+                    "inverse-primary": "#91db2e",
+                    "secondary": "#b5260a",
+                    "primary-container": "#85cd1e",
+                    "error": "#ba1a1a",
+                    "surface-container": "#ffe9e4",
+                    "on-error": "#ffffff",
+                    "on-surface": "#2b1610",
+                    "on-tertiary-container": "#004f72",
+                    "on-surface-variant": "#424936",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#c8e6ff",
+                    "surface": "#fff8f6",
+                    "on-primary-container": "#315300",
+                    "on-primary-fixed-variant": "#2f4f00",
+                    "outline-variant": "#c1cab1",
+                    "inverse-surface": "#432a23",
+                    "tertiary": "#006590",
+                    "on-tertiary-fixed-variant": "#004c6e",
+                    "surface-tint": "#406900",
+                    "on-tertiary-fixed": "#001e2e",
+                    "on-background": "#2b1610",
+                    "primary-fixed": "#acf84b",
+                    "tertiary-container": "#63c3ff",
+                    "secondary-fixed": "#ffdad3",
+                    "surface-bright": "#fff8f6",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#fff1ed",
+                    "primary-fixed-dim": "#91db2e",
+                    "on-secondary-fixed-variant": "#8d1500",
+                    "on-secondary-container": "#580900",
+                    "secondary-container": "#fc5939",
+                    "on-secondary-fixed": "#3e0500",
+                    "outline": "#727a64",
+                    "tertiary-fixed-dim": "#88ceff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .custom-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-[#fff8f6] dark:bg-[#2b1610] fixed top-0 left-0 right-0 z-50">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-xl mx-auto">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#406900] dark:text-[#85cd1e]">menu</span>
+<h1 class="text-2xl font-black text-[#406900] dark:text-[#85cd1e] tracking-tight">Pengueng</h1>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-1.5 rounded-full active:scale-95 duration-150 transition-all cursor-pointer">
+<span class="text-sm font-bold text-secondary">7</span>
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6 max-w-xl mx-auto space-y-8">
+<!-- Welcome Section -->
+<section>
+<h2 class="text-3xl font-extrabold tracking-tight mb-2">Merhaba, Deniz! 👋</h2>
+<p class="text-on-surface-variant font-medium">Bugün 3 yeni phrasal verb öğrenmeye ne dersin?</p>
+</section>
+<!-- Daily Goal Bento Grid -->
+<div class="grid grid-cols-12 gap-4">
+<!-- Circular Progress Card -->
+<div class="col-span-12 bg-surface-container-lowest p-8 rounded-xl shadow-[0_40px_60px_rgba(43,22,16,0.05)] relative overflow-hidden">
+<div class="flex items-center justify-between relative z-10">
+<div class="space-y-2">
+<span class="text-label text-primary font-bold tracking-wider">GÜNLÜK HEDEF</span>
+<h3 class="text-2xl font-bold text-on-surface">%70 Tamamlandı</h3>
+<p class="text-on-surface-variant text-sm">Hedefine ulaşmana sadece 3 kelime kaldı!</p>
+</div>
+<div class="relative w-24 h-24 flex items-center justify-center">
+<!-- Progress Circle Background -->
+<svg class="w-full h-full transform -rotate-90">
+<circle class="text-surface-container-high" cx="48" cy="48" fill="transparent" r="40" stroke="currentColor" stroke-width="8"></circle>
+<circle class="text-primary rounded-full" cx="48" cy="48" fill="transparent" r="40" stroke="currentColor" stroke-dasharray="251.2" stroke-dashoffset="75.36" stroke-width="8"></circle>
+</svg>
+<span class="absolute text-xl font-black text-on-surface">14/20</span>
+</div>
+</div>
+<!-- Decorative blob -->
+<div class="absolute -bottom-10 -right-10 w-40 h-40 bg-primary-fixed opacity-20 rounded-full blur-3xl"></div>
+</div>
+<!-- Daily Phrasal Verb Card -->
+<div class="col-span-12 bg-secondary-container p-8 rounded-xl text-on-secondary-container shadow-lg relative active:scale-[0.98] transition-transform">
+<div class="flex justify-between items-start mb-6">
+<div class="bg-on-secondary-container/10 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Günün Kelimesi</div>
+<span class="material-symbols-outlined">auto_awesome</span>
+</div>
+<h3 class="text-4xl font-black mb-2 tracking-tight">Break down</h3>
+<p class="text-lg font-medium opacity-90 mb-4 italic">"To stop working (machinery) or to lose control of emotions."</p>
+<div class="bg-on-secondary-container/5 p-4 rounded-lg border border-on-secondary-container/10">
+<p class="text-sm font-bold mb-1">Türkçe Karşılığı:</p>
+<p class="text-base font-medium">Bozulmak / Kendini tutamayıp ağlamaya başlamak</p>
+</div>
+</div>
+</div>
+<!-- Learning Paths Horizontal Scroll -->
+<section>
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-xl font-extrabold">Öğrenme Yolları</h3>
+<button class="text-primary font-bold text-sm">Tümünü Gör</button>
+</div>
+<div class="flex gap-4 overflow-x-auto pb-4 custom-scrollbar snap-x">
+<!-- Path 1 -->
+<div class="min-w-[160px] snap-start">
+<div class="bg-tertiary-container h-48 rounded-lg mb-3 flex flex-col p-4 justify-between relative overflow-hidden group">
+<img alt="Basics" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-500" data-alt="minimal flat illustration of basic geometric shapes with soft gradients in light blue and white aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuASwiJ0rODPdc4qSw726LVLjda83toCXJ9lDB0OLF7J1smNheaKdUFjHzsPSz6tjwtSiAgqd11tuaP9tzjuAUw7vu5vCyoNnWCWIB5sQW0qU-HrnjT3fLZKcZ8yXp1KC4SMfbZvJtTJdXAJ-5gmfG1oav_-CgdS752-ogtUgb1qtGFIJTHtiD3689xeed20-4lO7jiXoF3onyCzlmmRMuSYo8rShMQ0DwtwJlmCjVRjpNuHfkzL4QODkK_eeNSWy_qvqGY7kIxjt1Qq"/>
+<span class="material-symbols-outlined text-on-tertiary-container text-3xl">school</span>
+<div class="z-10">
+<h4 class="font-black text-on-tertiary-container">Basics</h4>
+<p class="text-[10px] font-bold text-on-tertiary-container/70 uppercase">12 Bölüm</p>
+</div>
+</div>
+</div>
+<!-- Path 2 -->
+<div class="min-w-[160px] snap-start">
+<div class="bg-surface-container-highest h-48 rounded-lg mb-3 flex flex-col p-4 justify-between relative overflow-hidden group">
+<img alt="Travel" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-500" data-alt="vibrant abstract background with warm orange and red tones representing movement and travel energy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMO2SFf4XXaZO6-Dy1qMDIl4prvhDMU4_o7eW6i-56XVsclkn8CCQlA6D2l_LoK8BEraGYnB1j1hGph7XvwyG9TOuzuTvxfs_hsyb4_8qK7-tO6MM6_MxeWiVOK8QOzV87qefWHPjOBEClWAMJWKncR5Aov7Rc5JYFobSUXxcG0DHDDKql133CpjGt908sPzR-ePccdQfUH6EwfyUFrfU_6-Vp7dbuE-e8T8oRM-AvBppolQxZkGDgXoaBN14Ft1ROud-bBRILj7wD"/>
+<span class="material-symbols-outlined text-secondary text-3xl">flight_takeoff</span>
+<div class="z-10">
+<h4 class="font-black text-on-surface">Travel</h4>
+<p class="text-[10px] font-bold text-on-surface/50 uppercase">8 Bölüm</p>
+</div>
+</div>
+</div>
+<!-- Path 3 -->
+<div class="min-w-[160px] snap-start">
+<div class="bg-primary-fixed h-48 rounded-lg mb-3 flex flex-col p-4 justify-between relative overflow-hidden group">
+<img alt="Business" class="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:scale-110 transition-transform duration-500" data-alt="clean professional architectural lines and glass surfaces in soft green and gray corporate palette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-Ctgm4qobHNh9oqqzcZvvvAL-tThNAmvNsGWyHHNEOS6tKS-_Bo3_DEGkBs8iopaKL6v0Qa4QKDlDOI5tVUWxutmQN93SO1dkmurUZ7fE3mCnWLEey9jl1BeyBEZEoZuB5tklWdG6aeltfZZkLjNFZHtwQs5fz6kl8rc2q0MhcszdgfWH-llA3vMbMLJUp0s8guZV8oDfVUEK-MnKmCA-mgtxkVy2lkqy4-Y9aDCZj7PhbauGrgrge8jrKaWawFJStzUp9tG3R2SW"/>
+<span class="material-symbols-outlined text-primary text-3xl">work</span>
+<div class="z-10">
+<h4 class="font-black text-primary">Business</h4>
+<p class="text-[10px] font-bold text-primary/70 uppercase">15 Bölüm</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Grid (Extra value) -->
+<section class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-6 rounded-lg">
+<span class="material-symbols-outlined text-tertiary mb-2">trending_up</span>
+<p class="text-2xl font-black">42</p>
+<p class="text-xs font-bold text-on-surface-variant uppercase">Kazanılan Kelime</p>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg">
+<span class="material-symbols-outlined text-primary mb-2">verified</span>
+<p class="text-2xl font-black">89%</p>
+<p class="text-xs font-bold text-on-surface-variant uppercase">Doğruluk Oranı</p>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#ffffff] dark:bg-[#2b1610] shadow-[0_-4px_20px_rgba(43,22,16,0.05)] rounded-t-[3rem] border-t border-[#c1cab1]/15">
+<!-- Home (Active) -->
+<a class="flex flex-col items-center justify-center bg-[#85cd1e] text-[#406900] rounded-full px-5 py-2 transition-all duration-300 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">home</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[11px]">Home</span>
+</a>
+<!-- Learn -->
+<a class="flex flex-col items-center justify-center text-[#2b1610]/70 dark:text-[#fff8f6]/70 px-5 py-2 hover:opacity-80 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[11px]">Learn</span>
+</a>
+<!-- Practice -->
+<a class="flex flex-col items-center justify-center text-[#2b1610]/70 dark:text-[#fff8f6]/70 px-5 py-2 hover:opacity-80 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">fitness_center</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[11px]">Practice</span>
+</a>
+<!-- Profile -->
+<a class="flex flex-col items-center justify-center text-[#2b1610]/70 dark:text-[#fff8f6]/70 px-5 py-2 hover:opacity-80 active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[11px]">Profile</span>
+</a>
+</nav>
+<!-- Floating Action Button for Quiz (Contextual) -->
+<button class="fixed right-6 bottom-28 w-16 h-16 bg-gradient-to-br from-primary to-primary-container text-white rounded-full shadow-2xl flex items-center justify-center active:scale-90 transition-all z-40">
+<span class="material-symbols-outlined text-3xl">play_arrow</span>
+</button>
+</body></html>

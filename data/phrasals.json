@@ -1,0 +1,140 @@
+[
+  {
+    "id": "go-through",
+    "category": "basics",
+    "phrase": "go through",
+    "meaning": "İncelemek / gözden geçirmek",
+    "baseVerbs": ["examine", "review"],
+    "synonyms": ["examine", "review"],
+    "examples": [
+      {
+        "sentence": "I need to go through these reports before the meeting.",
+        "translation": "Toplantıdan önce bu raporları incelemem gerekiyor."
+      }
+    ],
+    "quiz": [
+      {
+        "type": "baseVerb",
+        "prompt": "Which phrasal verb means the same as 'review' in this context?",
+        "blankPhrase": "go through",
+        "options": ["go through", "break down", "take off"],
+        "answer": "go through"
+      }
+    ]
+  },
+  {
+    "id": "break-down",
+    "category": "basics",
+    "phrase": "break down",
+    "meaning": "Bozulmak / duygusal olarak çökmek",
+    "baseVerbs": ["fail", "collapse"],
+    "synonyms": ["fail", "collapse"],
+    "examples": [
+      {
+        "sentence": "The engine might break down if it isn't serviced regularly.",
+        "translation": "Motor düzenli olarak bakıma alınmazsa bozulabilir."
+      }
+    ],
+    "quiz": [
+      {
+        "type": "meaning",
+        "prompt": "Which phrasal verb means 'bozulmak' when a machine stops working?",
+        "blankPhrase": "break down",
+        "options": ["look after", "go through", "break down"],
+        "answer": "break down"
+      }
+    ]
+  },
+  {
+    "id": "pick-up",
+    "category": "travel",
+    "phrase": "pick up",
+    "meaning": "Öğrenmek / almak / taşımak",
+    "baseVerbs": ["learn", "collect"],
+    "synonyms": ["learn", "collect"],
+    "examples": [
+      {
+        "sentence": "I picked up a few phrases while traveling in London.",
+        "translation": "Londra'da gezerken birkaç ifade öğrendim."
+      }
+    ],
+    "quiz": [
+      {
+        "type": "blank",
+        "prompt": "She can __ the package from the post office.",
+        "blankPhrase": "pick up",
+        "options": ["pick up", "run out of", "look after"],
+        "answer": "pick up"
+      }
+    ]
+  },
+  {
+    "id": "look-after",
+    "category": "travel",
+    "phrase": "look after",
+    "meaning": "Bakmak / ilgilenmek",
+    "baseVerbs": ["care for", "watch over"],
+    "synonyms": ["care for", "watch over"],
+    "examples": [
+      {
+        "sentence": "Can you look after my cat while I am away?",
+        "translation": "Ben yokken kedime bakabilir misin?"
+      }
+    ],
+    "quiz": [
+      {
+        "type": "meaning",
+        "prompt": "Which phrasal verb means 'care for' someone while they are away?",
+        "blankPhrase": "look after",
+        "options": ["look after", "run out", "pick up"],
+        "answer": "look after"
+      }
+    ]
+  },
+  {
+    "id": "run-out",
+    "category": "business",
+    "phrase": "run out",
+    "meaning": "Tükenmek / bitmek",
+    "baseVerbs": ["finish", "expire"],
+    "synonyms": ["finish", "expire"],
+    "examples": [
+      {
+        "sentence": "We've run out of coffee, can you buy some?",
+        "translation": "Kahvemiz bitti, biraz alabilir misin?"
+      }
+    ],
+    "quiz": [
+      {
+        "type": "meaning",
+        "prompt": "Which phrasal verb means 'bitmek' when a supply is gone?",
+        "blankPhrase": "run out",
+        "options": ["run out", "show up", "get along"],
+        "answer": "run out"
+      }
+    ]
+  },
+  {
+    "id": "take-off",
+    "category": "business",
+    "phrase": "take off",
+    "meaning": "Kalkmak / hızla popüler olmak",
+    "baseVerbs": ["launch", "leave"],
+    "synonyms": ["launch", "leave"],
+    "examples": [
+      {
+        "sentence": "The new product will take off once customers try it.",
+        "translation": "Müşteriler denedikten sonra yeni ürün hızla popüler olacak."
+      }
+    ],
+    "quiz": [
+      {
+        "type": "meaning",
+        "prompt": "Which phrasal verb can mean 'hızla popüler olmak' or 'kalkmak'?",
+        "blankPhrase": "take off",
+        "options": ["take off", "look for", "put off"],
+        "answer": "take off"
+      }
+    ]
+  }
+]

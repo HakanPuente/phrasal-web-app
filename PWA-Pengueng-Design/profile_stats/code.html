@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary": "#ffffff",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-highest": "#ffdbd1",
+                    "surface-container-high": "#ffe2da",
+                    "primary": "#406900",
+                    "error-container": "#ffdad6",
+                    "background": "#fff8f6",
+                    "on-primary-fixed": "#102000",
+                    "surface-variant": "#ffdbd1",
+                    "surface-dim": "#fad1c6",
+                    "inverse-on-surface": "#ffede8",
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#ffb4a5",
+                    "inverse-primary": "#91db2e",
+                    "secondary": "#b5260a",
+                    "primary-container": "#85cd1e",
+                    "error": "#ba1a1a",
+                    "surface-container": "#ffe9e4",
+                    "on-error": "#ffffff",
+                    "on-surface": "#2b1610",
+                    "on-tertiary-container": "#004f72",
+                    "on-surface-variant": "#424936",
+                    "on-error-container": "#93000a",
+                    "tertiary-fixed": "#c8e6ff",
+                    "surface": "#fff8f6",
+                    "on-primary-container": "#315300",
+                    "on-primary-fixed-variant": "#2f4f00",
+                    "outline-variant": "#c1cab1",
+                    "inverse-surface": "#432a23",
+                    "tertiary": "#006590",
+                    "on-tertiary-fixed-variant": "#004c6e",
+                    "surface-tint": "#406900",
+                    "on-tertiary-fixed": "#001e2e",
+                    "on-background": "#2b1610",
+                    "primary-fixed": "#acf84b",
+                    "tertiary-container": "#63c3ff",
+                    "secondary-fixed": "#ffdad3",
+                    "surface-bright": "#fff8f6",
+                    "on-secondary": "#ffffff",
+                    "surface-container-low": "#fff1ed",
+                    "primary-fixed-dim": "#91db2e",
+                    "on-secondary-fixed-variant": "#8d1500",
+                    "on-secondary-container": "#580900",
+                    "secondary-container": "#fc5939",
+                    "on-secondary-fixed": "#3e0500",
+                    "outline": "#727a64",
+                    "tertiary-fixed-dim": "#88ceff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Plus Jakarta Sans"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-32">
+<!-- Top App Bar -->
+<header class="bg-[#fff8f6] dark:bg-[#2b1610] fixed top-0 left-0 w-full z-50">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-xl mx-auto">
+<button class="text-[#406900] dark:text-[#85cd1e] hover:bg-[#fff1ed] dark:hover:bg-[#3d241d] transition-colors p-2 rounded-full Active: scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="font-['Plus_Jakarta_Sans'] font-bold text-xl text-2xl font-black text-[#406900] dark:text-[#85cd1e] tracking-tight">Pengueng</h1>
+<button class="text-[#406900] dark:text-[#85cd1e] hover:bg-[#fff1ed] dark:hover:bg-[#3d241d] transition-colors p-2 rounded-full Active: scale-95 duration-150">
+<span class="material-symbols-outlined" data-icon="local_fire_department">local_fire_department</span>
+</button>
+</div>
+</header>
+<main class="max-w-xl mx-auto px-6 pt-24 space-y-8">
+<!-- User Identity Section -->
+<section class="flex flex-col items-center text-center space-y-4 pt-4">
+<div class="relative">
+<div class="w-32 h-32 rounded-xl bg-primary-container p-1 shadow-lg overflow-hidden">
+<img alt="User Avatar" class="w-full h-full object-cover rounded-[2.5rem]" data-alt="Studio portrait of a friendly smiling young man with warm lighting and a soft neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFL_GIwhOvPAe03OQTFssDWkd_oWzbTPlAKBSUJ8ccI09W9avzbxYPCIM7nd34f4PkblDocmSFsPVERM2J1uNp5HlBsHA84n1e4na7mjQ-9bsJR81SiDs0QWjjn2Q6xYIl200_IuOAA4tAwXhXGDuW-G94pMxW5A0fRwTCP647pxVUND44p7xeHCM1LXLrqx82GOkqB8gj10Bc7HItRT8wlOa5dQet_BQiDmHKFb_bHTDC6-jJxYmS9-dPdNutauEjmKGhBJCFr86I"/>
+</div>
+<div class="absolute -bottom-2 -right-2 bg-secondary rounded-full p-2 text-on-secondary shadow-md border-4 border-background">
+<span class="material-symbols-outlined text-sm" data-icon="edit">edit</span>
+</div>
+</div>
+<div>
+<h2 class="text-3xl font-extrabold tracking-tight text-on-surface">Mert Demir</h2>
+<p class="text-on-surface-variant font-medium">Phrasal Verb Explorer</p>
+</div>
+<button class="flex items-center gap-2 px-6 py-3 bg-surface-container-low hover:bg-surface-container transition-colors rounded-full text-primary font-bold Active: scale-95 duration-150 border border-outline-variant/20">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+                Settings
+            </button>
+</section>
+<!-- Stats Bento Grid -->
+<section class="grid grid-cols-2 gap-4">
+<!-- Large Focus Card -->
+<div class="col-span-2 bg-surface-container-lowest p-8 rounded-xl flex flex-col justify-between relative overflow-hidden group border border-outline-variant/10">
+<div class="absolute top-0 right-0 w-32 h-32 bg-primary-container/20 rounded-full -mr-16 -mt-16 blur-3xl"></div>
+<div class="relative z-10">
+<span class="text-primary font-bold label-lg uppercase tracking-widest text-[10px]">Total Progress</span>
+<div class="text-5xl font-black text-on-surface mt-2">1,284</div>
+<div class="text-on-surface-variant font-bold mt-1">Words Learned</div>
+</div>
+<div class="mt-6 h-3 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full w-3/4 bg-gradient-to-r from-primary to-primary-container rounded-full relative">
+<div class="absolute inset-0 bg-white/20 mix-blend-overlay"></div>
+</div>
+</div>
+</div>
+<!-- Streak Card -->
+<div class="bg-secondary-container p-6 rounded-xl flex flex-col justify-center items-center text-center space-y-2 border border-outline-variant/10">
+<span class="material-symbols-outlined text-on-secondary-container text-4xl" data-icon="local_fire_department" data-weight="fill" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<div>
+<div class="text-2xl font-black text-on-secondary-container">12</div>
+<div class="text-xs font-bold text-on-secondary-container/80 uppercase tracking-wider">Days Streak</div>
+</div>
+</div>
+<!-- Accuracy Card -->
+<div class="bg-tertiary-container p-6 rounded-xl flex flex-col justify-center items-center text-center space-y-2 border border-outline-variant/10">
+<span class="material-symbols-outlined text-on-tertiary-container text-4xl" data-icon="target">target</span>
+<div>
+<div class="text-2xl font-black text-on-tertiary-container">94%</div>
+<div class="text-xs font-bold text-on-tertiary-container/80 uppercase tracking-wider">Accuracy %</div>
+</div>
+</div>
+</section>
+<!-- Badges Section -->
+<section class="space-y-4">
+<div class="flex justify-between items-end px-2">
+<h3 class="text-xl font-extrabold text-on-surface">Earned Badges</h3>
+<span class="text-primary font-bold text-sm">View All</span>
+</div>
+<div class="flex gap-4 overflow-x-auto pb-4 scrollbar-hide snap-x">
+<!-- Badge 1 -->
+<div class="flex-shrink-0 w-40 h-48 bg-surface-container-lowest rounded-xl p-5 flex flex-col items-center justify-between snap-center border border-outline-variant/15 shadow-sm">
+<div class="w-20 h-20 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-4xl" data-icon="verified" data-weight="fill" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="text-center">
+<div class="font-bold text-on-surface leading-tight">Master of Off</div>
+<p class="text-[10px] text-on-surface-variant mt-1 font-medium">Completed 'Off' series</p>
+</div>
+</div>
+<!-- Badge 2 -->
+<div class="flex-shrink-0 w-40 h-48 bg-surface-container-lowest rounded-xl p-5 flex flex-col items-center justify-between snap-center border border-outline-variant/15 shadow-sm">
+<div class="w-20 h-20 rounded-full bg-primary-container/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-4xl" data-icon="auto_awesome" data-weight="fill" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+</div>
+<div class="text-center">
+<div class="font-bold text-on-surface leading-tight">Phrasal Pro</div>
+<p class="text-[10px] text-on-surface-variant mt-1 font-medium">100 accurate matches</p>
+</div>
+</div>
+<!-- Badge 3 -->
+<div class="flex-shrink-0 w-40 h-48 bg-surface-container-lowest rounded-xl p-5 flex flex-col items-center justify-between snap-center border border-outline-variant/15 shadow-sm">
+<div class="w-20 h-20 rounded-full bg-tertiary-container/30 flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-4xl" data-icon="calendar_month" data-weight="fill" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+</div>
+<div class="text-center">
+<div class="font-bold text-on-surface leading-tight">Early Bird</div>
+<p class="text-[10px] text-on-surface-variant mt-1 font-medium">7am practice streak</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Progress Chart Area -->
+<section class="bg-surface-container-low rounded-xl p-6 border border-outline-variant/5">
+<h3 class="text-on-surface font-extrabold mb-4">Activity Insights</h3>
+<div class="flex items-end justify-between h-32 gap-2">
+<div class="w-full bg-primary-container h-[40%] rounded-t-lg"></div>
+<div class="w-full bg-primary-container h-[60%] rounded-t-lg"></div>
+<div class="w-full bg-primary-container h-[90%] rounded-t-lg"></div>
+<div class="w-full bg-primary h-[100%] rounded-t-lg"></div>
+<div class="w-full bg-primary-container h-[70%] rounded-t-lg"></div>
+<div class="w-full bg-primary-container h-[50%] rounded-t-lg"></div>
+<div class="w-full bg-primary-container h-[30%] rounded-t-lg"></div>
+</div>
+<div class="flex justify-between mt-2 text-[10px] font-bold text-on-surface-variant uppercase tracking-tighter">
+<span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span>
+</div>
+</section>
+</main>
+<!-- Bottom Navigation Bar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 pt-3 bg-[#ffffff] dark:bg-[#2b1610] rounded-t-[3rem] border-t border-[#c1cab1]/15 shadow-[0_-4px_20px_rgba(43,22,16,0.05)]">
+<a class="flex flex-col items-center justify-center text-[#2b1610]/70 dark:text-[#fff8f6]/70 px-5 py-2 hover:opacity-80 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[11px]">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#2b1610]/70 dark:text-[#fff8f6]/70 px-5 py-2 hover:opacity-80 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[11px]">Learn</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#2b1610]/70 dark:text-[#fff8f6]/70 px-5 py-2 hover:opacity-80 transition-all duration-300" href="#">
+<span class="material-symbols-outlined" data-icon="fitness_center">fitness_center</span>
+<span class="font-['Plus_Jakarta_Sans'] font-medium text-[11px]">Practice</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#85cd1e] text-[#406900] rounded-full px-5 py-2 transition-all duration-300 scale-95 shadow-lg shadow-primary-container/20" href="#">
+<span class="material-symbols-outlined" data-icon="person" data-weight="fill" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-['Plus_Jakarta_Sans'] font-bold text-[11px]">Profile</span>
+</a>
+</nav>
+</body></html>
